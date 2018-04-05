@@ -1,0 +1,32 @@
+﻿<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>CSharp\1033\Dataflow</RelativePathOnDisk>
+    <TemplateFileName>CSharp.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <TemplateID>{6dc387a0-643d-4fa7-99e5-63a25eaa96a4}</TemplateID>
+        <Name Package="{50f94825-4600-4c67-b8ec-e2ecd18a1068}" ID="103" />
+        <Description Package="{50f94825-4600-4c67-b8ec-e2ecd18a1068}" ID="102" />
+        <Icon Package="{50f94825-4600-4c67-b8ec-e2ecd18a1068}" ID="201" />
+        <ProjectType>CSharp</ProjectType>
+        <SortOrder>360</SortOrder>
+        <DefaultName>Dataflow.dataflow</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>VisualBasic\1033\Dataflow</RelativePathOnDisk>
+    <TemplateFileName>VisualBasic.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <TemplateID>{94338ca2-98e9-4c2d-91c4-ac30759d29fb}</TemplateID>
+        <Name Package="{50f94825-4600-4c67-b8ec-e2ecd18a1068}" ID="103" />
+        <Description Package="{50f94825-4600-4c67-b8ec-e2ecd18a1068}" ID="102" />
+        <Icon Package="{50f94825-4600-4c67-b8ec-e2ecd18a1068}" ID="201" />
+        <ProjectType>VisualBasic</ProjectType>
+        <SortOrder>360</SortOrder>
+        <DefaultName>Dataflow.dataflow</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>

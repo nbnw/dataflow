@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<flowGraph xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="32efa34c-1732-40a0-9440-6ba7f2fec4e4" name="" xmlns="http://schemas.microsoft.com/dsltools/Dataflow">
+  <comments>
+    <comment Id="9fcca38d-3be0-465c-8d29-f6b3aee5621a" text="A Comment">
+      <subjects>
+        <taskMoniker name="//Actor2/Task1" />
+      </subjects>
+    </comment>
+  </comments>
+  <actors>
+    <actor Id="fdb7e7a5-3abc-41a5-bf61-21706ae42f76" name="Actor1">
+      <flowElements>
+        <startPoint Id="f76ece69-f165-4916-ba85-2cc059c55268" name="StartPoint1">
+          <flowTo>
+            <flow Id="135e6490-d9c1-453b-a6dd-80a695da56e5">
+              <taskMoniker name="//Actor1/Task1" />
+            </flow>
+          </flowTo>
+        </startPoint>
+        <task Id="c5852f8d-9266-4224-8114-5b9d3e755eb1" name="Task1">
+          <flowTo>
+            <flow Id="197a450c-50ad-461a-9d89-981623990300">
+              <mergeBranchMoniker name="//Actor1/MergeBranch1" />
+            </flow>
+          </flowTo>
+        </task>
+        <mergeBranch Id="a1c8df84-71f1-4b8e-ab39-485c280fa325" name="MergeBranch1">
+          <flowTo>
+            <flow Id="76eaa855-c935-4ea6-a55e-a1e92af463e5">
+              <taskMoniker name="//Actor2/Task1" />
+            </flow>
+            <flow Id="6efdf7f2-b0de-4fa0-9e60-12f3b3849456">
+              <taskMoniker name="//Actor1/Task3" />
+            </flow>
+          </flowTo>
+        </mergeBranch>
+        <task Id="fba51764-4d17-44b7-a42f-b650c6d00f2b" name="Task2">
+          <flowTo>
+            <flow Id="856ec147-d90b-447a-9167-dce181dbb586">
+              <synchronizationMoniker name="//Actor1/Synchronization1" />
+            </flow>
+          </flowTo>
+        </task>
+        <synchronization Id="0f9b7410-4abf-46a5-8070-d07a1e599266" name="Synchronization1">
+          <flowTo>
+            <flow Id="24b1114a-90a8-479d-9538-f7773812fe4c">
+              <endpointMoniker name="//Actor1/EndPoint1" />
+            </flow>
+          </flowTo>
+        </synchronization>
+        <endpoint Id="e1777621-7aef-4d69-ae5c-acabe6a4c913" name="EndPoint1" />
+        <task Id="595cf882-f908-473b-b964-3274f8dd1162" name="Task3">
+          <flowTo>
+            <flow Id="77580153-332b-47bc-b5fe-77b82aaa877b">
+              <taskMoniker name="//Actor1/Task2" />
+            </flow>
+          </flowTo>
+        </task>
+      </flowElements>
+    </actor>
+    <actor Id="858596fe-aa43-490f-9af1-ca877946971c" name="Actor2">
+      <flowElements>
+        <task Id="6738e61b-9fa8-484f-a012-5207de7dc4b3" name="Task1">
+          <flowTo>
+            <flow Id="aa945537-09f2-476e-859a-4dec7c140a32">
+              <synchronizationMoniker name="//Actor1/Synchronization1" />
+            </flow>
+          </flowTo>
+        </task>
+      </flowElements>
+    </actor>
+    <actor Id="fe29cb82-d125-478d-90d4-2ff17e5a5510" name="Actor3" />
+  </actors>
+</flowGraph>

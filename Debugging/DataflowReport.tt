@@ -1,0 +1,42 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>
+<#@ output extension=".cs" #>
+<#@ Dataflow processor="DataflowDirectiveProcessor" requires="fileName='Sample.dataflow'" #>
+using System.Threading.Tasks.Dataflow;
+
+<#
+	foreach (Actor eachActor in this.FlowGraph.Actors)
+	{
+#>
+public class <#= eachActor.Name #>
+{
+<#
+	
+		foreach (FlowElement eachElement in eachActor.FlowElements)
+		{
+#>
+	public class <#=eachElement.Name #>
+	{
+			
+	 // <#=eachElement.GetType() #>
+			
+<#
+			foreach(FlowElement flowTo in eachElement.FlowTo)
+			{	
+#>				
+														
+
+				// Flow To: <#=flowTo.Name#>
+				// Flow To: <#=flowTo.Actor.Name#>
+<#}#>			
+			<#foreach(FlowElement flowFrom in eachElement.FlowFrom){#>
+				// Flow From: <#=flowFrom.Name#>
+				// Flow From: <#=flowFrom.Actor.Name#>
+			<#} #>
+
+	}
+
+	  <#}#>
+		}
+<#
+	}
+#>

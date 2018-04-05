@@ -1,0 +1,24 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="50f94825-4600-4c67-b8ec-e2ecd18a1068" Version="1.0.0.0" Language="en-US" Publisher="NBNW" />
+    <DisplayName>Task Flow</DisplayName>
+    <Description>Description for NBNW.Dataflow.Dataflow</Description>
+  </Metadata>
+  <Installation InstalledByMsi="false">
+    <InstallationTarget Version="[15.0]" Id="Microsoft.VisualStudio.Community" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.6,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.15.0" DisplayName="Visual Studio MPF 15.0" Version="[15.0,16.0)" />
+    <Dependency Version="[1.1,2.0)" Location="DslExtensionsPackage.vsix" DisplayName="DslExtensionsPackage" Id="DslExtensionsPackage.c7aa86bb-ee7c-4ef4-a67a-e7b7300ca34a" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="NBNW.Dataflow.DslPackage.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="NBNW.Dataflow.DslPackage.dll" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="NBNW.Dataflow.Dsl.dll" />
+    <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="ItemTemplates" />
+  </Assets>
+</PackageManifest>

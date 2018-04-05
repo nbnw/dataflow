@@ -1,0 +1,2 @@
+﻿<#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>
+<# Guid guidCmdSet = new Guid ("c93a48c2-68e7-44a0-ad0d-087d20c181a4"); string menuidCommandsExtensionBaseId="0x4000";#><#@ include file="DslPackage\CommandExtensionVSCT.tt" #>

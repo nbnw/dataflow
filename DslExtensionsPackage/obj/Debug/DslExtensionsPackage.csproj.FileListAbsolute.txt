@@ -1,0 +1,8 @@
+C:\Users\milleemm\source\repos\Dataflow\DslExtensionsPackage\bin\Debug\DslExtensionsPackage.vsix
+C:\Users\milleemm\source\repos\Dataflow\DslExtensionsPackage\bin\Debug\extension.vsixmanifest
+C:\Users\milleemm\source\repos\Dataflow\DslExtensionsPackage\obj\Debug\DslExtensionsPackage.csprojResolveAssemblyReference.cache
+C:\Users\milleemm\source\repos\Dataflow\DslExtensionsPackage\obj\Debug\DslExtensionsPackage.csproj.CoreCompileInputs.cache
+C:\Users\milleemm\source\repos\Dataflow\DslExtensionsPackage\obj\Debug\DslExtensionsPackage.dll
+C:\Users\milleemm\source\repos\Dataflow\DslExtensionsPackage\obj\Debug\DslExtensionsPackage.pdb
+C:\Users\milleemm\source\repos\Dataflow\DslExtensionsPackage\obj\Debug\extension.vsixmanifest
+C:\Users\milleemm\source\repos\Dataflow\DslExtensionsPackage\bin\Debug\GeneratedCode\DataflowSchema.xsd

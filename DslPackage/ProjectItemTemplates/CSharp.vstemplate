@@ -1,0 +1,17 @@
+﻿<!--DSL Tools Language Template-->
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TemplateData>
+		<TemplateID>{6dc387a0-643d-4fa7-99e5-63a25eaa96a4}</TemplateID>
+		<Name Package="{50f94825-4600-4c67-b8ec-e2ecd18a1068}" ID="103"/>
+		<Description Package="{50f94825-4600-4c67-b8ec-e2ecd18a1068}" ID="102"/>
+		<Icon Package="{50f94825-4600-4c67-b8ec-e2ecd18a1068}" ID="201" />
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>360</SortOrder>
+		<DefaultName>Dataflow.dataflow</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem TargetFileName="$fileinputname$.dataflow">dataflow.dataflow</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.dataflow.diagram">dataflow.diagram</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
+
